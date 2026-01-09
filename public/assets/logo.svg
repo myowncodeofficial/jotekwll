@@ -1,0 +1,46 @@
+<svg width="600" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Brighter Premium Gradients for Contrast -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF4B5C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ED1C24;stop-opacity:1" />
+    </linearGradient>
+    <style>
+      .brand-blue { fill: url(#blueGrad); }
+      .brand-red { fill: url(#redGrad); }
+      .brand-circle { stroke: #D4AF37; stroke-width: 4; fill: none; }
+      .text-bold { font-family: 'Orbitron', sans-serif; font-weight: 800; }
+      .text-small { font-family: 'Inter', sans-serif; font-weight: 600; font-size: 22px; }
+      .arabic-text { font-family: 'Inter', sans-serif; font-weight: 700; }
+    </style>
+  </defs>
+
+  <!-- Clear Gold Circle -->
+  <circle cx="300" cy="100" r="70" class="brand-circle" />
+  
+  <!-- JOTEK Text - Made bolder and slightly larger -->
+  <text x="30" y="115" font-size="85" class="brand-blue text-bold">JOTEK</text>
+  <text x="175" y="150" class="brand-blue text-small">W.L.L</text>
+
+  <!-- Arabic Text - Shifted for better balance -->
+  <text x="380" y="115" font-size="75" class="brand-blue arabic-text">جوتك</text>
+  <text x="400" y="150" class="brand-blue text-small">ذ.م.م</text>
+
+  <!-- Wings (Top - High Contrast Red) -->
+  <g transform="translate(300, 100) rotate(-10)">
+    <path d="M-10,-5 C10,-25 60,-30 80,-25 C50,-20 20,-10 0,5 Z" class="brand-red" />
+    <path d="M-5,-15 C15,-35 55,-40 70,-35 C45,-30 20,-20 5,-10 Z" class="brand-red" opacity="0.8" />
+    <path d="M0,-25 C15,-40 45,-45 55,-40 C35,-35 15,-30 5,-25 Z" class="brand-red" opacity="0.6" />
+  </g>
+
+  <!-- Wings (Bottom - High Contrast Blue) -->
+  <g transform="translate(300, 100) rotate(170)">
+    <path d="M-10,-5 C10,-25 60,-30 80,-25 C50,-20 20,-10 0,5 Z" class="brand-blue" />
+    <path d="M-5,-15 C15,-35 55,-40 70,-35 C45,-30 20,-20 5,-10 Z" class="brand-blue" opacity="0.8" />
+    <path d="M0,-25 C15,-40 45,-45 55,-40 C35,-35 15,-30 5,-25 Z" class="brand-blue" opacity="0.6" />
+  </g>
+</svg>
